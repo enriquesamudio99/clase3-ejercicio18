@@ -1,0 +1,16 @@
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\bin\Debug\net5.0\ejerciciosParteCuatro.exe
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\bin\Debug\net5.0\ejerciciosParteCuatro.deps.json
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\bin\Debug\net5.0\ejerciciosParteCuatro.runtimeconfig.json
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\bin\Debug\net5.0\ejerciciosParteCuatro.runtimeconfig.dev.json
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\bin\Debug\net5.0\ejerciciosParteCuatro.dll
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\bin\Debug\net5.0\ref\ejerciciosParteCuatro.dll
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\bin\Debug\net5.0\ejerciciosParteCuatro.pdb
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\obj\Debug\net5.0\ejerciciosParteCuatro.csprojAssemblyReference.cache
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\obj\Debug\net5.0\ejerciciosParteCuatro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\obj\Debug\net5.0\ejerciciosParteCuatro.AssemblyInfoInputs.cache
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\obj\Debug\net5.0\ejerciciosParteCuatro.AssemblyInfo.cs
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\obj\Debug\net5.0\ejerciciosParteCuatro.csproj.CoreCompileInputs.cache
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\obj\Debug\net5.0\ejerciciosParteCuatro.dll
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\obj\Debug\net5.0\ref\ejerciciosParteCuatro.dll
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\obj\Debug\net5.0\ejerciciosParteCuatro.pdb
+C:\Users\Enrique\Desktop\C# Docs\ejerciciosParteCuatro\ejerciciosParteCuatro\obj\Debug\net5.0\ejerciciosParteCuatro.genruntimeconfig.cache
