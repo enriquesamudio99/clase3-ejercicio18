@@ -2,71 +2,71 @@
 
 namespace ejerciciosParteCuatro
 {
+    class Empleado
+    {
+        public string nombre;
+        public string apellido;
+        public string puesto;
+        public double jornalPorHora;
+        public int horasTrabajadas;
+        public double importe;
+        public double impuestoIps;
+
+        public Empleado(string nombre, string apellido, string puesto, double jornalPorHora, int horasTrabajadas)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.puesto = puesto;
+            this.jornalPorHora = jornalPorHora;
+            this.horasTrabajadas = horasTrabajadas;
+        }
+
+        public void calcular()
+        {
+            calcularImporte();
+            calcularImpuesto();
+        }
+
+        public void calcularImporte()
+        {
+            double importe = this.jornalPorHora * this.horasTrabajadas;
+
+            this.importe = importe;
+        }
+
+        public void calcularImpuesto()
+        {
+            double impuesto = this.importe * 0.09;
+
+            this.impuestoIps = impuesto;
+        }
+
+        public void generarReporte()
+        {
+            string impuestoFormateado = string.Format("{0:#,##0.##}", this.importe);
+            string impuestoIpsFormateado = string.Format("{0:#,##0.##}", this.impuestoIps);
+            double importeConIps = this.importe - this.impuestoIps;
+            string importeConIpsFormateado = string.Format("{0:#,##0.##}", importeConIps);
+
+            Console.WriteLine("            DETALLE DE EL/LA EMPLEADO/A            ");
+            Console.WriteLine("===================================================");
+            Console.WriteLine("  Nombre:                 {0}", this.nombre);
+            Console.WriteLine("---------------------------------------------------");
+            Console.WriteLine("  Apellido:               {0}", this.apellido);
+            Console.WriteLine("---------------------------------------------------");
+            Console.WriteLine("  Puesto:                 {0}", this.puesto);
+            Console.WriteLine("---------------------------------------------------");
+            Console.WriteLine("  Importe:                {0} GS", impuestoFormateado);
+            Console.WriteLine("---------------------------------------------------");
+            Console.WriteLine("  Impuesto IPS:           {0} GS", impuestoIpsFormateado);
+            Console.WriteLine("---------------------------------------------------");
+            Console.WriteLine("  Importe con dcto. IPS:  {0} GS", importeConIpsFormateado);
+            Console.WriteLine("===================================================");
+        }
+    }
+
     class Program
     {
-
-        class Empleado
-        {
-            public string nombre;
-            public string apellido;
-            public string puesto;
-            public double jornalPorHora;
-            public int horasTrabajadas;
-            public double importe;
-            public double impuestoIps;
-
-            public Empleado(string nombre, string apellido, string puesto, double jornalPorHora, int horasTrabajadas)
-            {
-                this.nombre = nombre;
-                this.apellido = apellido;
-                this.puesto = puesto;
-                this.jornalPorHora = jornalPorHora;
-                this.horasTrabajadas = horasTrabajadas;
-            }
-
-            public void calcular()
-            {
-                calcularImporte();
-                calcularImpuesto();
-            }
-
-            public void calcularImporte()
-            { 
-                double importe = this.jornalPorHora * this.horasTrabajadas;
-
-                this.importe = importe;
-            }
-
-            public void calcularImpuesto()
-            {
-                double impuesto = this.importe * 0.09;
-
-                this.impuestoIps = impuesto;
-            }
-
-            public void generarReporte()
-            {
-                string impuestoFormateado = string.Format("{0:#,##0.##}", this.importe);
-                string impuestoIpsFormateado = string.Format("{0:#,##0.##}", this.impuestoIps);
-                double importeConIps = this.importe - this.impuestoIps;
-                string importeConIpsFormateado = string.Format("{0:#,##0.##}", importeConIps);
-
-                Console.WriteLine("            DETALLE DE EL/LA EMPLEADO/A            ");
-                Console.WriteLine("===================================================");
-                Console.WriteLine("  Nombre:                 {0}", this.nombre);
-                Console.WriteLine("---------------------------------------------------");
-                Console.WriteLine("  Apellido:               {0}", this.apellido);
-                Console.WriteLine("---------------------------------------------------");
-                Console.WriteLine("  Puesto:                 {0}", this.puesto);
-                Console.WriteLine("---------------------------------------------------");
-                Console.WriteLine("  Importe:                {0} GS", impuestoFormateado);
-                Console.WriteLine("---------------------------------------------------");
-                Console.WriteLine("  Impuesto IPS:           {0} GS", impuestoIpsFormateado);
-                Console.WriteLine("---------------------------------------------------");
-                Console.WriteLine("  Importe con dcto. IPS:  {0} GS", importeConIpsFormateado);
-                Console.WriteLine("===================================================");
-            }
-        }
 
         static void Main(string[] args)
         {
@@ -75,7 +75,12 @@ namespace ejerciciosParteCuatro
 
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine("Ingrese los datos de el/la empleado/a N° {0}", i + 1);
+                Console.WriteLine("===================================================");
+                Console.WriteLine("       INGRESE LOS DATOS DE CUATRO EMPLEADOS       ");
+                Console.WriteLine("===================================================");
+                Console.WriteLine("                  EMPLEADO/A N° {0}                  ", i + 1);
+                Console.WriteLine("===================================================");
+
                 Console.Write("Ingrese el nombre de el/la empleado/a: ");
                 string nombreEmpleado = Console.ReadLine();
                 Console.Write("Ingrese el apellido de el/la empleado/a: ");
@@ -90,7 +95,11 @@ namespace ejerciciosParteCuatro
                 Empleado empleado = new Empleado(nombreEmpleado, apellidoEmpleado, puestoEmpleado, jornalPorHora, horasTrabajadas);
 
                 empleados[i] = empleado;
+
+                Console.Clear();
             }
+
+            Console.Clear();
 
             Console.WriteLine("===================================================");
 
